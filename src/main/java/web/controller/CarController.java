@@ -30,6 +30,18 @@ public class HelloController {
         return "index";
     }
 
+//	@GetMapping(value = "/cars")
+//	public String printCars(ModelMap model) {
+//		model.addAttribute("cars", carDAO.carsList());
+//		return "cars";
+//	}
+
+
+//	@GetMapping(value = "/cars/{id}")
+//	public String show(@PathVariable("id") int id, ModelMap model) {
+//		model.addAttribute("carsCount", carDAO.showCars(id));
+//		return "show";
+//	}
 
     @GetMapping(value = "/cars")
     public String show(@RequestParam(value = "count", required = false) Integer count, ModelMap model) {
