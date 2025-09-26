@@ -31,3 +31,6 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/darsiya77/PP_2_1_4_spring-types-of-wiring.git
 git push -u origin main
+
+git status
+git log
